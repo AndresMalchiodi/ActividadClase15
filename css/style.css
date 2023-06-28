@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+    background-color: white;
+}
+
+.layout{
+    width: 99%;
+    height: 95vh;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 20% 40% 40%;
+    gap: 15px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    background-color: rgb(247, 237, 100);
+    grid-column: 1 / span 3;
+}
+
+h1{
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+
+.section1{
+    background-image: url(../multimedia/imagenes/boxeo.jpg);
+    grid-column: 1 / 2;
+}
+
+.section2{
+    background-image: url(../multimedia/imagenes/ciclismo.jpg);
+    grid-column: 2 / 3;
+}
+
+.section3{
+    background-image: url(../multimedia/imagenes/gimnasia.jpg);
+    grid-column: 3 / 4;
+}
+
+.section4{
+    background-image: url(../multimedia/imagenes/judo.jpg);
+    grid-column: 1 / 2;
+}
+
+.section5{
+    background-image: url(../multimedia/imagenes/pesas.jpg);
+    grid-column: 2 / 3;
+}
+
+.section6{
+    background-image: url(../multimedia/imagenes/remo.jpg);
+    grid-column: 3 / 4;
+}
+
+.section1, .section2, .section3, .section4, .section5, .section6{
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 1px 22px -8px rgba(0,0,0,0.46);
+}
+
+.section1:hover,
+.section2:hover,
+.section3:hover,
+.section4:hover,
+.section5:hover,
+.section6:hover{
+    opacity: 0.8;
+}
+
+h2:hover{
+    color: yellow;
+}
+
+h2{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 40px;
+}
